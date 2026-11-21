@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.local
+*.tsbuildinfo
+work/
+.DS_Store
+*.zip
