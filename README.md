@@ -1,4 +1,38 @@
-# 像素镜 · 双图滑动对比平台
+# Pixel Compare / 像素镜 · 双图对比
+
+**Compare two images side by side, inspect pixel alignment, and review before/after results locally in your browser.** Pixel Compare is useful for computer vision, AI image generation, image restoration, design review, and any workflow where two images should line up. Your images stay on your computer; the app does not upload them.
+
+[Download the Windows package](https://github.com/Gululu-gulu/pixel-compare/releases/latest) · [Read the Chinese guide](#中文说明)
+
+![Pixel Compare slider comparison demo](public/screenshots/slider-demo.gif)
+
+### Features
+
+- Compare paired image folders by matching filenames.
+- Drag the center divider, blend images with adjustable opacity, or blink between them.
+- Zoom, pan, inspect pixel coordinates, and manually align images.
+- Runs locally in Chrome or Edge. No account, cloud service, or external API is required.
+
+### Quick start
+
+Download and extract the Windows package from [GitHub Releases](https://github.com/Gululu-gulu/pixel-compare/releases/latest), then double-click `启动平台.cmd`. The included demo can be opened before selecting your own image folders.
+
+For source installation, use Node.js 22.18 or newer:
+
+```bash
+git clone https://github.com/Gululu-gulu/pixel-compare.git
+cd pixel-compare
+npm install
+npm run dev
+```
+
+## 中文说明
+
+![像素镜界面截图](public/screenshots/pixel-compare.png)
+
+---
+
+### 项目简介
 
 在浏览器中批量对比两组同名图片，检查原始图像是否像素级对齐。它可以用于有雾图/清晰图、原图/生成图、Before/After、输入/输出、参考图/预测图、渲染结果/实拍图、配准前/配准后等场景。支持单张替换、按同名批量更新，以及手动对齐和 PNG 导出。React + TypeScript + Vite 实现；所有图片在浏览器本地解码，不上传，不依赖在线 API、字体或 CDN。
 
